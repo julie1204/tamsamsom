@@ -88,7 +88,6 @@ var result = require('./routes/result.js')(app, conn, upload);
 app.use('/result', result)
 app.post('/result', (req, res) => {
   var result = req.body.test;
- 
   res.render('test/result', {result: result})
 });
 app.get('/sugang', (req, res) => {
